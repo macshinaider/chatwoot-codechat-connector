@@ -9,4 +9,4 @@ FROM node:16-alpine
 WORKDIR /app/
 COPY --from=build /app/dist/ .
 COPY --from=build /app/node_modules/ ./node_modules/
-CMD ["node","dist/app.js"]
+CMD ["npm","start"]
